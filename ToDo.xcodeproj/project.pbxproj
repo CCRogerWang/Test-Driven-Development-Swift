@@ -12,7 +12,12 @@
 		DB5C4A641EFBA65800C85302 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5C4A621EFBA65800C85302 /* Main.storyboard */; };
 		DB5C4A661EFBA65800C85302 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB5C4A651EFBA65800C85302 /* Assets.xcassets */; };
 		DB5C4A691EFBA65800C85302 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5C4A671EFBA65800C85302 /* LaunchScreen.storyboard */; };
-		DB5C4A741EFBA65800C85302 /* ToDoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C4A731EFBA65800C85302 /* ToDoTests.swift */; };
+		DB5C4A811EFBB07A00C85302 /* ToDoItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C4A801EFBB07A00C85302 /* ToDoItemTests.swift */; };
+		DB5C4A831EFBB29C00C85302 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C4A821EFBB29C00C85302 /* ToDoItem.swift */; };
+		DB5C4A851EFBBED200C85302 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C4A841EFBBED200C85302 /* LocationTests.swift */; };
+		DB5C4A871EFBC03A00C85302 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C4A861EFBC03A00C85302 /* Location.swift */; };
+		DB5C4A891EFBC40200C85302 /* ItemManagerTests,.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C4A881EFBC40200C85302 /* ItemManagerTests,.swift */; };
+		DB5C4A8B1EFBC47700C85302 /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C4A8A1EFBC47700C85302 /* ItemManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +39,13 @@
 		DB5C4A681EFBA65800C85302 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB5C4A6A1EFBA65800C85302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB5C4A6F1EFBA65800C85302 /* ToDoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB5C4A731EFBA65800C85302 /* ToDoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTests.swift; sourceTree = "<group>"; };
 		DB5C4A751EFBA65800C85302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB5C4A801EFBB07A00C85302 /* ToDoItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToDoItemTests.swift; path = Model/ToDoItemTests.swift; sourceTree = "<group>"; };
+		DB5C4A821EFBB29C00C85302 /* ToDoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToDoItem.swift; path = Model/ToDoItem.swift; sourceTree = "<group>"; };
+		DB5C4A841EFBBED200C85302 /* LocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationTests.swift; path = Model/LocationTests.swift; sourceTree = "<group>"; };
+		DB5C4A861EFBC03A00C85302 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Location.swift; path = Model/Location.swift; sourceTree = "<group>"; };
+		DB5C4A881EFBC40200C85302 /* ItemManagerTests,.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ItemManagerTests,.swift"; path = "Model/ItemManagerTests,.swift"; sourceTree = "<group>"; };
+		DB5C4A8A1EFBC47700C85302 /* ItemManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemManager.swift; path = Model/ItemManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +93,9 @@
 				DB5C4A651EFBA65800C85302 /* Assets.xcassets */,
 				DB5C4A671EFBA65800C85302 /* LaunchScreen.storyboard */,
 				DB5C4A6A1EFBA65800C85302 /* Info.plist */,
+				DB5C4A821EFBB29C00C85302 /* ToDoItem.swift */,
+				DB5C4A861EFBC03A00C85302 /* Location.swift */,
+				DB5C4A8A1EFBC47700C85302 /* ItemManager.swift */,
 			);
 			path = ToDo;
 			sourceTree = "<group>";
@@ -90,8 +103,10 @@
 		DB5C4A721EFBA65800C85302 /* ToDoTests */ = {
 			isa = PBXGroup;
 			children = (
-				DB5C4A731EFBA65800C85302 /* ToDoTests.swift */,
 				DB5C4A751EFBA65800C85302 /* Info.plist */,
+				DB5C4A801EFBB07A00C85302 /* ToDoItemTests.swift */,
+				DB5C4A841EFBBED200C85302 /* LocationTests.swift */,
+				DB5C4A881EFBC40200C85302 /* ItemManagerTests,.swift */,
 			);
 			path = ToDoTests;
 			sourceTree = "<group>";
@@ -146,10 +161,12 @@
 				TargetAttributes = {
 					DB5C4A5A1EFBA65800C85302 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = CK5MHBYB2A;
 						ProvisioningStyle = Automatic;
 					};
 					DB5C4A6E1EFBA65800C85302 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = DB5C4A5A1EFBA65800C85302;
 					};
@@ -200,7 +217,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB5C4A611EFBA65800C85302 /* ViewController.swift in Sources */,
+				DB5C4A8B1EFBC47700C85302 /* ItemManager.swift in Sources */,
 				DB5C4A5F1EFBA65800C85302 /* AppDelegate.swift in Sources */,
+				DB5C4A871EFBC03A00C85302 /* Location.swift in Sources */,
+				DB5C4A831EFBB29C00C85302 /* ToDoItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +228,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB5C4A741EFBA65800C85302 /* ToDoTests.swift in Sources */,
+				DB5C4A851EFBBED200C85302 /* LocationTests.swift in Sources */,
+				DB5C4A811EFBB07A00C85302 /* ToDoItemTests.swift in Sources */,
+				DB5C4A891EFBC40200C85302 /* ItemManagerTests,.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +361,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CK5MHBYB2A;
 				INFOPLIST_FILE = ToDo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.104.ToDo;
@@ -351,6 +374,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CK5MHBYB2A;
 				INFOPLIST_FILE = ToDo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.104.ToDo;
@@ -364,10 +388,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ToDoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.104.ToDoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToDo.app/ToDo";
 			};
@@ -378,6 +404,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ToDoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.104.ToDoTests;
@@ -406,6 +433,7 @@
 				DB5C4A7A1EFBA65800C85302 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB5C4A7B1EFBA65800C85302 /* Build configuration list for PBXNativeTarget "ToDoTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +442,7 @@
 				DB5C4A7D1EFBA65800C85302 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
