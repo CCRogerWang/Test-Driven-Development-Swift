@@ -22,6 +22,11 @@
 		DB5C4A871EFBC03A00C85302 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C4A861EFBC03A00C85302 /* Location.swift */; };
 		DB5C4A891EFBC40200C85302 /* ItemManagerTests,.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C4A881EFBC40200C85302 /* ItemManagerTests,.swift */; };
 		DB5C4A8B1EFBC47700C85302 /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C4A8A1EFBC47700C85302 /* ItemManager.swift */; };
+		DB8F5BD51F0F36DC0054F7BD /* ItemCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8F5BD41F0F36DC0054F7BD /* ItemCellTests.swift */; };
+		DB8F5BD71F0F6CBC0054F7BD /* DetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8F5BD61F0F6CBC0054F7BD /* DetailViewControllerTests.swift */; };
+		DB8F5BD91F0F6D820054F7BD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8F5BD81F0F6D820054F7BD /* DetailViewController.swift */; };
+		DB8F5BDB1F0F86970054F7BD /* InputViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8F5BDA1F0F86970054F7BD /* InputViewControllerTests.swift */; };
+		DB8F5BDD1F0F876D0054F7BD /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8F5BDC1F0F876D0054F7BD /* InputViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,11 @@
 		DB5C4A861EFBC03A00C85302 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Location.swift; path = Model/Location.swift; sourceTree = "<group>"; };
 		DB5C4A881EFBC40200C85302 /* ItemManagerTests,.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ItemManagerTests,.swift"; path = "Model/ItemManagerTests,.swift"; sourceTree = "<group>"; };
 		DB5C4A8A1EFBC47700C85302 /* ItemManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemManager.swift; path = Model/ItemManager.swift; sourceTree = "<group>"; };
+		DB8F5BD41F0F36DC0054F7BD /* ItemCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemCellTests.swift; path = Controller/ItemCellTests.swift; sourceTree = "<group>"; };
+		DB8F5BD61F0F6CBC0054F7BD /* DetailViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewControllerTests.swift; path = Controller/DetailViewControllerTests.swift; sourceTree = "<group>"; };
+		DB8F5BD81F0F6D820054F7BD /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = Controller/DetailViewController.swift; sourceTree = "<group>"; };
+		DB8F5BDA1F0F86970054F7BD /* InputViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InputViewControllerTests.swift; path = Controller/InputViewControllerTests.swift; sourceTree = "<group>"; };
+		DB8F5BDC1F0F876D0054F7BD /* InputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InputViewController.swift; path = Controller/InputViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,15 +125,17 @@
 		DB5C4A5D1EFBA65800C85302 /* ToDo */ = {
 			isa = PBXGroup;
 			children = (
-				DB5C4A5E1EFBA65800C85302 /* AppDelegate.swift */,
 				DB5C4A621EFBA65800C85302 /* Main.storyboard */,
-				DB5C4A651EFBA65800C85302 /* Assets.xcassets */,
 				DB5C4A671EFBA65800C85302 /* LaunchScreen.storyboard */,
+				DB5C4A651EFBA65800C85302 /* Assets.xcassets */,
 				DB5C4A6A1EFBA65800C85302 /* Info.plist */,
+				DB5C4A5E1EFBA65800C85302 /* AppDelegate.swift */,
 				DB5686A01F0BA0410032562B /* Model */,
 				DB5686A81F0BA1EE0032562B /* ItemListViewController.swift */,
 				DB5686AA1F0CB5270032562B /* ItemListDataProvider.swift */,
 				DB5686AE1F0CE6520032562B /* ItemCell.swift */,
+				DB8F5BD81F0F6D820054F7BD /* DetailViewController.swift */,
+				DB8F5BDC1F0F876D0054F7BD /* InputViewController.swift */,
 			);
 			path = ToDo;
 			sourceTree = "<group>";
@@ -135,6 +147,9 @@
 				DB5686A11F0BA05C0032562B /* Model */,
 				DB5686A41F0BA15B0032562B /* ItemListViewControllerTest.swift */,
 				DB5686AC1F0CD2170032562B /* ItemListDataProviderTests.swift */,
+				DB8F5BD41F0F36DC0054F7BD /* ItemCellTests.swift */,
+				DB8F5BD61F0F6CBC0054F7BD /* DetailViewControllerTests.swift */,
+				DB8F5BDA1F0F86970054F7BD /* InputViewControllerTests.swift */,
 			);
 			path = ToDoTests;
 			sourceTree = "<group>";
@@ -244,12 +259,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB8F5BDD1F0F876D0054F7BD /* InputViewController.swift in Sources */,
 				DB5C4A8B1EFBC47700C85302 /* ItemManager.swift in Sources */,
 				DB5686AB1F0CB5270032562B /* ItemListDataProvider.swift in Sources */,
 				DB5C4A5F1EFBA65800C85302 /* AppDelegate.swift in Sources */,
 				DB5C4A871EFBC03A00C85302 /* Location.swift in Sources */,
 				DB5686AF1F0CE6520032562B /* ItemCell.swift in Sources */,
 				DB5C4A831EFBB29C00C85302 /* ToDoItem.swift in Sources */,
+				DB8F5BD91F0F6D820054F7BD /* DetailViewController.swift in Sources */,
 				DB5686A91F0BA1EE0032562B /* ItemListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,9 +275,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB8F5BD51F0F36DC0054F7BD /* ItemCellTests.swift in Sources */,
 				DB5C4A851EFBBED200C85302 /* LocationTests.swift in Sources */,
 				DB5C4A811EFBB07A00C85302 /* ToDoItemTests.swift in Sources */,
+				DB8F5BDB1F0F86970054F7BD /* InputViewControllerTests.swift in Sources */,
 				DB5686A51F0BA15B0032562B /* ItemListViewControllerTest.swift in Sources */,
+				DB8F5BD71F0F6CBC0054F7BD /* DetailViewControllerTests.swift in Sources */,
 				DB5686AD1F0CD2170032562B /* ItemListDataProviderTests.swift in Sources */,
 				DB5C4A891EFBC40200C85302 /* ItemManagerTests,.swift in Sources */,
 			);
